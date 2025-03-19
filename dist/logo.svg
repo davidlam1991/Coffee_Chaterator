@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Rounded square background -->
+  <rect x="0" y="0" width="200" height="200" rx="40" ry="40" fill="#5CBAB2" />
+  
+  <!-- Coffee cup body -->
+  <rect x="70" y="90" width="60" height="50" rx="5" ry="5" fill="white" />
+  
+  <!-- Cup handle -->
+  <path d="M130 100 C145 100, 145 130, 130 130" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" />
+  
+  <!-- Cup base/saucer suggestion -->
+  <rect x="65" y="140" width="70" height="5" rx="2" ry="2" fill="white" />
+  
+  <!-- Steam lines -->
+  <line x1="80" y1="70" x2="80" y2="85" stroke="white" stroke-width="5" stroke-linecap="round" />
+  <line x1="100" y1="70" x2="100" y2="85" stroke="white" stroke-width="5" stroke-linecap="round" />
+  <line x1="120" y1="70" x2="120" y2="85" stroke="white" stroke-width="5" stroke-linecap="round" />
+</svg>

@@ -1,0 +1,206 @@
+/* Global styles */
+:root {
+  font-family: "Albert Sans", sans-serif;
+}
+
+body {
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.generated-text-textarea,
+.username-input,
+.details-textarea,
+.reason-dropdown,
+.connection-dropdown {
+  width: 100%;
+  border-radius: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  transition: all 0.3s ease;
+}
+
+.username-display {
+  display: inline-block;
+  width: 100%;
+  border-radius: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  cursor: text;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.username-display:hover,
+.username-input:hover,
+.details-textarea:hover,
+.connection-dropdown:hover,
+.reason-dropdown:hover,
+.generated-text-textarea:hover,
+.username-input:focus,
+.details-textarea:focus,
+.connection-dropdown:focus,
+.reason-dropdown:focus,
+.generated-text-textarea:focus {
+  background-color: #f0f0f0;
+}
+
+.generated-text-textarea,
+.details-textarea {
+  resize: none;
+  height: 100px;
+}
+
+.menu-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.form-content {
+  flex: 1;
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.username-input-container,
+.connection-dropdown-container,
+.reason-dropdown-container,
+.details-textarea-container,
+.format-options-container,
+.generate-button {
+  margin-bottom: 15px;
+}
+
+.generate-button {
+  width: 100%;
+  height: 40px;
+  background-color: #0e76a8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.generate-button:hover {
+  background-color: #1a8bc2;
+}
+
+.generate-button:active {
+  transform: scale(0.98);
+}
+
+/* Format Options */
+.format-options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toggle-container {
+  position: relative;
+  width: 100%;
+  height: 36px;
+  background-color: #f0f0f0;
+  border-radius: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-slider {
+  position: absolute;
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  border-radius: 18px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-container.formal .toggle-slider {
+  transform: translateX(calc(100% - 4px));
+}
+
+.option {
+  flex: 1;
+  text-align: center;
+  z-index: 1;
+  font-weight: 500;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.toggle-container.formal .option.formal,
+.toggle-container:not(.formal) .option.casual {
+  color: #1a8bc2;
+}
+
+/* Button */
+.copy-button,
+.back-button {
+  background: none;
+  border: none;
+  color: #1a8bc2;
+  cursor: pointer;
+  padding: 5px;
+  display: block;
+  transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+.copy-button {
+  float: right;
+  margin-left: auto;
+}
+
+.copy-button:hover,
+.back-button:hover {
+  opacity: 0.7;
+}
+
+.copy-button:active,
+.back-button:active {
+  transform: scale(0.9);
+}
+
+/* Feedback Link */
+.feedbacks {
+  color: #1a8bc2;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.feedbacks:hover {
+  opacity: 0.7;
+}
